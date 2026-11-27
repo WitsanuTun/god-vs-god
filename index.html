@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GOD VS GOD เกมการ์ดเทพยุโรป เล่นกับคอมผ่านเว็บ">
+  <title>GOD VS GOD · ศึกเทพยุโรป</title>
+  <link rel="icon" href="assets/emblem-web.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="bar">
+    <button id="home" class="brand"><img src="assets/emblem-web.png" alt=""><span>GOD <small>VS</small> GOD</span></button>
+    <nav aria-label="เมนูเกม"><button id="collection" class="ghost">คลังการ์ด</button><button id="rules" class="ghost">วิธีเล่น</button></nav>
+  </header>
+  <main id="screen"></main>
+  <dialog id="overlay" aria-labelledby="dialog-title">
+    <header class="dialog-head"><h2 id="dialog-title"></h2><form method="dialog"><button aria-label="ปิด" class="ghost close">×</button></form></header>
+    <div id="dialog-body"></div>
+  </dialog>
+  <template id="intro">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow"><i></i> MYTHOLOGICAL CARD BATTLE <i></i></p>
+        <h1>GOD <em>VS</em> GOD</h1>
+        <p class="hero-thai">ศึกเทพยุโรป</p>
+        <p class="hero-copy">เลือกเทพคู่ใจ สวมอาวุธตำนาน<br>แล้วประลองไพ่จนเหลือผู้รอดคนสุดท้าย</p>
+        <div class="start-panel">
+          <label for="opponents">คู่แข่งคอมพิวเตอร์</label>
+          <div class="start-line"><select id="opponents"><option value="1">1 คน</option><option value="2">2 คน</option><option value="3">3 คน</option></select><button class="primary" id="start">เริ่มประลอง</button></div>
+        </div>
+        <div class="hero-count"><span><strong>30</strong> เทพ</span><span><strong>20</strong> อาวุธ</span><span><strong>100</strong> การ์ดในกองปกติ</span></div>
+      </div>
+    </section>
+  </template>
+</body>
+</html>
